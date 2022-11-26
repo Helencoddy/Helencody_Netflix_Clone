@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+header div+div {
+    text-align: right;
+}
+
+.logo {
+    width: 100px;
+}
+
+.button {
+    padding: 7px 17px;
+    background-color: #e50914;
+    border-radius: 3px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+div.splash div.splashscreen img {
+    max-width: 100%;
+    opacity: 0.3;
+}
+
+div.splash {
+    position: relative;
+}
+
+div.splash div.gradient {
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 40%,transparent 75%,rgba(0,0,0,.8));
+    position: absolute;
+    inset: 0;
+}
+
+div.splash div.content {
+    display: grid;
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 75px 0;
+    z-index: 1;
+}
+div.splash h1 {
+    font-size: 3.125rem;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+div.splash h3 {
+    font-size: 1.625rem;
+    margin: 1rem auto;
+    max-width: 640px;
+    font-weight: 400;
+    text-align: center;
+}
+
+div.splash p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 0 5%;
+    margin-bottom: 20px;
+}
+
+div.form-section {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+div.form {
+    display: flex;
+    padding: 15px 10px;
+    width: 100;
+}
+
+.CTA-2 {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 10px;
+    align-items: center;
+    display: flex;
+}
+
+.first-section,
+.second-section,
+.third-section,
+.fourth-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    position: relative;
+}
+
+section h1 {
+    font-size: 3.125rem;
+    font-weight: 500;
+}
+
+section h3 {
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+
+.first-section {
+    padding: 60px 25px;
+    border-top: 8px rgb(69, 69, 69) solid;
+    padding: 50px;
+}
+
+.video {
+    width: 400px;
+}
+
+.media {
+    width: 400px;
+    position: relative;
+    z-index: 5;
+}
+
+.second-section {
+    border-top: 8px rgb(69, 69, 69) solid;
+    padding: 50px;
+}
+
+.third-section {
+    border-top: 8px rgb(69, 69, 69) solid;
+    padding: 50px;
+}
+
+.fourth-section {
+    border-top: 8px rgb(69, 69, 69) solid;
+    padding: 50px;
+}
+
+.Frequently_Asked_Questions {
+    border-top: 8px rgb(69, 69, 69) solid;
+    background-color: black;
+    padding: 100px;
+    text-align: left;
+}
+
+.FAQs h1{
+    padding-bottom: 40px;
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-items: center;
+}
+
+.wrap details{
+    padding: 20px 30px;
+    margin: 5px;
+    font-size: 1.6rem;
+    background-color: #303030;
+    color: white;
+    text-align: left;
+    width: 635px;
+    cursor: pointer;
+}
+.wrap .paragraph {
+    padding: 20px 30px;
+    margin: 5px;
+    font-size: 1rem;
+    background-color: #303030;
+    color: white;
+    text-align: left;
+}
+
+.wrap summary {
+    position: relative;
+}
+
+.wrap summary svg {
+    height: 30px;
+    width: 80px;
+    position: absolute;
+    inset: 0;
+    margin-left: 95%;
+    padding-right: 5%;
+}
+
+div.subsection {
+    text-align: center;
+    margin: 20px;
+    font-weight: 400;
+}
+
+.form2 {
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+
+.input {
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.button2 {
+    padding: 15px 10px;
+    background-color: #e50914;
+}
+
+.last-section {
+    width: 100%;
+    margin: 1rem auto;
+    border-top: 8px rgb(69, 69, 69) solid ;
+    padding: 50px;
+    background-color: black;
+}
+
+.last-section ,
+.last-section a{
+    color: #999999;
+    font-size: 0.9rem;
+}
+
+.last-section p{
+    margin-bottom: 1.5rem;
+}
+
+.last-section .col-4{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2rem;
+    background-color: black;
+}
+
+.col-4 li{
+    line-height: 2.4;
+}
+
+.last-section li a {
+    text-decoration: none;
+    list-style-type: none;
+}
